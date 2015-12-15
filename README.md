@@ -1,3 +1,3 @@
 # ngo-leitfaden
-NGo Leitfaden - Intern für NGOs
+NGO Leitfaden - Internet für NGOs
 http://www.ngoleitfaden.org/
