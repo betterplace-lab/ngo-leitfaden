@@ -1,0 +1,42 @@
+// Webfonts
+@import "webfont.less";
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// CSS Reset
+@import "reset.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+// Wordpress Styles
+@import "wordpress.less";
+
+// Components: common
+@import "wells.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+html .mceContentBody {
+	max-width: 770px;
+  font-family: @serifFontFamily;
+  background: @grayLighter;
+}
+a {
+  color: @linkColor;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+img {
+    margin: 0;
+}

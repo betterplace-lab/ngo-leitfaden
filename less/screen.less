@@ -1,0 +1,235 @@
+/*!
+ * SMNGO CSS
+ *
+ * Copyright 2013 Christoph Schuessler
+ */
+
+
+// make room for fixed top nav
+body {
+  padding-top: 52px;
+  background: @grayLighter;
+}
+.masthead {
+  background: @white;
+}
+.main {
+  padding: 20px 0 40px 0;
+}
+.content {
+  font-family: @serifFontFamily;
+}
+header {
+  h1 {
+    color: @green;
+  }
+}
+.toc,
+.page-toc {
+  margin: 20px 0 0 0;
+  font-weight: 700;
+  ul {
+    margin-bottom: 20px;
+    li {
+      font-weight: 500;
+      a {
+        margin: 0;
+      }
+    }
+  }
+}
+.toc {
+  a {
+    color: @grayDark;
+    margin: 0 0 10px 0;
+    &:hover {
+      color: @green;
+      text-decoration: none;
+    }
+  }
+  .sub-menu li {
+    list-style-image: url('../images/zarr-gr-r.png');
+  }
+}
+.page-toc {
+  margin-bottom: 20px;
+  a {
+    margin: 0 0 4px 0;
+    padding: 0 2px;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      background: @orange !important;
+      color: @white;
+    }
+  }
+  li {
+    border-bottom: 1px dotted @grayDark;
+    margin: 0 0 4px 0;
+  }
+  .sub-menu {
+    display: none;
+    li {
+      border: 0;
+      list-style-image: url('../images/zarr-green-r.png');
+    }
+  }
+  .current-menu-item > a {
+    text-decoration: none;
+    background: @orange !important;
+    color: @white;
+  }
+  .current-menu-item,
+  .current-menu-ancestor {
+    .sub-menu {
+      display: block;
+    }
+  }
+}
+.brand {
+  background: url('../images/site-logo.png') no-repeat center;
+  min-width: 172px;
+}
+.order-link {
+  color: @orange;
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 20px;
+  background: url('../images/zarr-or-r.png') no-repeat left center;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -2000em;
+  overflow: hidden;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+footer {
+  color: @grayLight;
+  nav {
+    a {
+      color: @grayLight;
+    }
+    li {
+      padding: 0 !important;
+    }
+    .menu-item-last span {
+      display: none;
+    }
+  }
+  .support {
+    background: @white;
+    position: relative;
+    .ir {
+      background-image: url('../images/footer-logos.png');
+      height: 118px;
+    }
+    &:after {
+      content: url('../images/pointer.png');
+      position: absolute;
+      bottom: -40px;
+      left: 30%;
+    }
+  }
+}
+#bpl {
+  width: 98px;
+}
+#wigwam {
+  width: 144px;
+  background-position: -98px 0;
+}
+#sap {
+  width: 126px;
+  background-position: -242px 0;
+}
+.dachzeile {
+  text-transform: uppercase;
+}
+.order-btn {
+  margin-left: 10px;
+}
+
+.comments {
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .widget {
+    border-top: 5px solid @green;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+}
+
+//jQuery.Stickem
+@media (min-width: 768px) {
+  .stickem-container {
+    position: relative;
+    .span8 {
+      float: right;
+    }
+  }
+  .stickit {
+      position: fixed;
+      top: 53px;
+  }
+  .stickit-end {
+      bottom: 0;
+      position: absolute;
+      left: 0;
+  }
+}
+
+
+// CF7
+.wpcf7-form {
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .controls-row .wpcf7-form-control-wrap + .wpcf7-form-control-wrap input {
+      margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .controls-row .wpcf7-form-control-wrap + .wpcf7-form-control-wrap input {
+      margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .controls-row .wpcf7-form-control-wrap + .wpcf7-form-control-wrap input {
+     margin-left: 30px;
+  }
+}
+input.wpcf7-not-valid,
+select.wpcf7-not-valid,
+textarea.wpcf7-not-valid {
+  border-color: @orange;
+  &:focus {
+    border-color: darken(@orange, 10%);
+    @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@orange, 20%);
+  }
+}
+.wpcf7-not-valid-tip {
+  display: none;
+}
+.ajax-loader {
+  margin: 0 0 0 20px;
+}
+
+
+// bp
+@media (min-width: 980px) {
+  #betterplace_donation_iframe iframe {
+    width: 540px;
+  }
+}
+@media (min-width: 1200px) {
+  #betterplace_donation_iframe iframe {
+    width: 670px;
+  }
+}

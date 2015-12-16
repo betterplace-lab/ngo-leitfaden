@@ -1,0 +1,62 @@
+<fieldset>
+  [response]
+  <div class="control-group">
+    <label class="control-label" for="your-first-name">Name</label>
+    <div class="controls controls-row">
+      [text* your-first-name /100 id:your-first-name class:span2 placeholder "Vorname"][text* your-last-name /100 id:your-last-name class:span2 placeholder "Nachname"]
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="your-org">Organisation / Firma</label><div class="controls">
+      [text your-org /200 id:your-org class:span4 placeholder "(optionale Angabe)"]
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="your-street">Straße, Nr.</label><div class="controls">
+      [text* your-street /200 id:your-street class:span4 placeholder "Straße und Hausnummer"]
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="your-zip">PLZ, Ort</label>
+    <div class="controls controls-row">
+      [text* your-zip /200 id:your-zip class:span1 placeholder "PLZ"][text* your-city /200 id:your-city class:span3 placeholder "Ort"]
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="your-email">E-Mail</label><div class="controls">
+    [email* your-email /255 id:your-email class:span4 placeholder "E-Mail-Adresse"]
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+         [checkbox mc-subscribe exclusive default:0 class:subscribe-checkbox "Ich möchte den betterplace E-Mail-Newsletter abonnieren"]
+      </label>
+    [submit class:btn "Leitfaden bestellen"]
+    </div>
+  </div>
+</fieldset>
+
+
+
+
+
+on_sent_ok: "location = 'http://www.ngoleitfaden.org/danke/';"
+
+
+
+
+
+
+
+Bestellung von [your-first-name] [your-last-name]
+[your-org]
+
+Adresse:
+[your-street]
+[your-zip] [your-city]
+
+E-Mail: [your-email]
+
+--
+Diese E-Mail wurde über das Bestellformular der NGO-Leitfaden-Website gesendet
