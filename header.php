@@ -12,6 +12,34 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv/html5shiv.js"></script>
     <![endif]-->
+    <style>
+    .fundraising-handbuch-teaser {
+      background: #fc2bfc;
+      color: white;
+      padding: 20px 0;
+      position: relative;
+    }
+    .fundraising-handbuch-teaser .container {
+      position: relative;
+    }
+    @media (min-width: 600px) {
+      .fundraising-handbuch-teaser .container:before {
+        content: '';
+        position: absolute;
+        top: -90px;
+        right: 40px;
+        background: url('http://www.fundraising-handbuch.org/assets/media/handbuch-online-fundraising.png') no-repeat 0 0;
+        background-size: contain;
+        height: 220px;
+        width: 189px;
+        display: block;
+      }
+    }
+    .fundraising-handbuch-teaser a {
+      color: white;
+    }
+
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -50,6 +78,15 @@
       <div class="container">
         <img src="<?php echo get_template_directory_uri(); ?>/images/masthead.jpg" alt="">
       </div>
+
+      <div class="fundraising-handbuch-teaser">
+        <div class="container">
+          NGO Leitfaden?
+          <span style="color: #dddddd; display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
+          Jetzt aktuelles <a href="http://www.fundraising-handbuch.org/"><strong>Handbuch Online-Fundraising</strong></a> bestellen.
+        </div>
+      </div>
+
     </header>
     <div class="main">
       <article class="container">
