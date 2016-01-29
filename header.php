@@ -22,11 +22,11 @@
     .fundraising-handbuch-teaser .container {
       position: relative;
     }
-    @media (min-width: 600px) {
+    @media (min-width: 980px) {
       .fundraising-handbuch-teaser .container:before {
         content: '';
         position: absolute;
-        top: -90px;
+        top: -160px;
         right: 40px;
         background: url('http://www.fundraising-handbuch.org/assets/media/handbuch-online-fundraising.png') no-repeat 0 0;
         background-size: contain;
