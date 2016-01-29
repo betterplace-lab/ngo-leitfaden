@@ -27,7 +27,7 @@
         content: '';
         position: absolute;
         top: -160px;
-        right: 40px;
+        right: 120px;
         background: url('http://www.fundraising-handbuch.org/assets/media/handbuch-online-fundraising.png') no-repeat 0 0;
         background-size: contain;
         height: 220px;
