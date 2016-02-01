@@ -26,17 +26,26 @@
       .fundraising-handbuch-teaser .container:before {
         content: '';
         position: absolute;
-        top: -160px;
-        right: 120px;
+        top: -90px;
+        right: 20px;
         background: url('http://www.fundraising-handbuch.org/assets/media/handbuch-online-fundraising.png') no-repeat 0 0;
         background-size: contain;
-        height: 220px;
-        width: 189px;
+        height: 170px;
+        width: 139px;
         display: block;
       }
     }
     .fundraising-handbuch-teaser a {
       color: white;
+    }
+    .fundraising-handbuch-teaser .btn {
+      color: #485155;
+      margin-left: 10px;
+    }
+    @media (max-width: 980px) {
+      .fundraising-handbuch-teaser .btn {
+        display: none;
+      }
     }
 
     </style>
@@ -54,7 +63,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <?php
-              wp_nav_menu( array( 
+              wp_nav_menu( array(
                   'container' => false,
                   'fallback_cb' => false,
                   'theme_location' => 'main',
@@ -63,13 +72,8 @@
                   'after' => '',
               ));
               ?>
-            <li>
-              <span class="order-btn">
-                <a href="<?php echo get_page_link_by_slug('bestellen'); ?>" class="btn btn-primary" type="button">Leitfaden bestellen</a>
-              </span>
-            </li>
             </ul>
-            <?php get_search_form(); ?> 
+            <?php get_search_form(); ?>
           </div>
         </div>
       </div>
@@ -84,6 +88,7 @@
           NGO Leitfaden?
           <span style="color: #dddddd; display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
           Jetzt aktuelles <a href="http://www.fundraising-handbuch.org/"><strong>Handbuch Online-Fundraising</strong></a> bestellen.
+          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-primary" type="button">Leitfaden bestellen</a>
         </div>
       </div>
 
