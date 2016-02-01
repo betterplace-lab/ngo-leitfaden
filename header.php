@@ -31,8 +31,8 @@
         right: 20px;
         background: url('http://www.fundraising-handbuch.org/assets/media/handbuch-online-fundraising.png') no-repeat 0 0;
         background-size: contain;
-        height: 170px;
-        width: 139px;
+        height: 180px;
+        width: 160px;
         display: block;
       }
     }
@@ -92,9 +92,9 @@
       <div class="fundraising-handbuch-teaser">
         <div class="container">
           NGO Leitfaden?
-          <span style="color: #dddddd; display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
+          <span style="display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
           Jetzt aktuelles <a href="http://www.fundraising-handbuch.org/"><strong>Handbuch Online-Fundraising</strong></a> bestellen.
-          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-secondary" type="button">Jetzt bestellen</a>
+          <a href="http://www.fundraising-handbuch.org/" class="btn btn-secondary" type="button">Jetzt bestellen</a>
         </div>
       </div>
 
