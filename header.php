@@ -88,7 +88,7 @@
           NGO Leitfaden?
           <span style="color: #dddddd; display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
           Jetzt aktuelles <a href="http://www.fundraising-handbuch.org/"><strong>Handbuch Online-Fundraising</strong></a> bestellen.
-          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-primary" type="button">Leitfaden bestellen</a>
+          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-secondary" type="button">Leitfaden bestellen</a>
         </div>
       </div>
 
