@@ -18,6 +18,7 @@
       color: white;
       padding: 20px 0;
       position: relative;
+      margin-bottom: 30px;
     }
     .fundraising-handbuch-teaser .container {
       position: relative;
@@ -33,6 +34,11 @@
         height: 170px;
         width: 139px;
         display: block;
+      }
+    }
+    @media (min-width: 1200px) {
+      .fundraising-handbuch-teaser .container:before {
+        right: 240px;
       }
     }
     .fundraising-handbuch-teaser a {
@@ -88,7 +94,7 @@
           NGO Leitfaden?
           <span style="color: #dddddd; display: inline-block; margin-right: 50px;">Alt und vergriffen.</span>
           Jetzt aktuelles <a href="http://www.fundraising-handbuch.org/"><strong>Handbuch Online-Fundraising</strong></a> bestellen.
-          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-secondary" type="button">Leitfaden bestellen</a>
+          <a href="http://www.ngoleitfaden.org/bestellen/" class="btn btn-secondary" type="button">Jetzt bestellen</a>
         </div>
       </div>
 
